@@ -1,0 +1,30 @@
+Q. List any four malicious objectives that an attacker can achieve using SQL injection attack?
+A. Read sensitive data from the database, modify database(Insert/Update/Delete), execute administration operations on the database(such as shutdownthe DBMS), recover the content of a given file present on the DBMS file system.
+
+Q. Can SQL attack enable an attacker to issue commands to a database? Can SQL attack enable an attacker to issue commands to an operating system?
+A. Both answers are yes.
+
+Q. Briefly answer the following questions about SQL injection.
+
+1 full list
+
+$LASTNAME = "randomname AND 'a'='a"
+
+2 add
+
+$LASTNAME = "randomname' INSERT INTO emplyees (firstname, lastname) VALUES("A", "B") --" 
+
+3 update
+
+$LASTNAME = "randomname' UPDATE employees SET firstname='John' WHERE lastname= 'Smith' --"
+
+4 delete
+
+$LASTNAME = "randomname' DELETE FROM employees WHERE lastname= 'Smith' --"
+
+Q. prevention measures(How to demonstrate?)
+1. Prepared statements: the developer has to first define all the SQL code and then pass in each parameter to the query later. So the database can distinguish between code and data, so the entire user input will be matched as a single string rather than that a part of the input as the parameter and the rest as another sql statement.
+
+2. Stored Procedure: the developer has to first define all the SQL code and then pass in each paramter to the query after. But unlike prepared statements, this procedure defines and stores the SQL code in the database itself and then called from the application.
+
+3. Escaping all user supplied input: escape user input before putting it in a query, which means that convert all the quotes in the user input so that they will not cause any ambiguity.
