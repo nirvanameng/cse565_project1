@@ -22,7 +22,7 @@ $LASTNAME = "randomname' UPDATE employees SET firstname='John' WHERE lastname= '
 
 $LASTNAME = "randomname' DELETE FROM employees WHERE lastname= 'Smith' --"
 
-Q. prevention measures
+Q. prevention measures(How to demonstrate?)
 1. Prepared statements: the developer has to first define all the SQL code and then pass in each parameter to the query later. So the database can distinguish between code and data, so the entire user input will be matched as a single string rather than that a part of the input as the parameter and the rest as another sql statement.
 
 2. Stored Procedure: the developer has to first define all the SQL code and then pass in each paramter to the query after. But unlike prepared statements, this procedure defines and stores the SQL code in the database itself and then called from the application.
