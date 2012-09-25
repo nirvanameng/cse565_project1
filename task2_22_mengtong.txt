@@ -8,7 +8,7 @@ Q. Briefly answer the following questions about SQL injection.
 
 1 full list
 
-$LASTNAME = "randomname AND 'a'='a"
+$LASTNAME = "randomname OR 'a'='a"
 
 2 add
 
