@@ -10,6 +10,8 @@ Q. Briefly answer the following questions about SQL injection.
 
 $LASTNAME = "randomname OR 'a'='a"
 
+";" needed?
+
 2 add
 
 $LASTNAME = "randomname' INSERT INTO emplyees (firstname, lastname) VALUES("A", "B") --" 
