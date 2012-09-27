@@ -1,0 +1,11 @@
+5. Lesson: String SQL Injection
+1)SQL statement used
+	SELECT * FROM user_data WHERE last_name = 'Smith'
+2)Modified SQL statement used for the SQL injection. How did it work?
+	SELECT * FROM user_data WHERE last_name = 'Smith' OR 'a' = 'a'
+	The input is Smith' OR 'a'='a, where the first single quote will complete the input name and the rest input and the last single quote will form a contion that holds true for every records. Thus all the record are displayed.
+3)How didi WebGoat fix the vulnerability?(Hint: See 'Show Java' tab)?
+	Using prepared statement.
+4)Screenshots
+	String_SQL_inejction.png
+

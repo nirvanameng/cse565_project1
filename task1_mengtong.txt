@@ -1,4 +1,47 @@
 Input Validation:
+	The process of validating all the input to an application before using it.
+	https://www.owasp.org/index.php/Category:Input_Validation
 
 Adware:
-	
+	Any software package which automatically renders advertisements.
+	http://en.wikipedia.org/wiki/Adware
+
+Browser hijacking:
+	The modification of a web browser's settings by malware.
+	http://en.wikipedia.org/wiki/Browser_hijacking
+
+Payload:
+	The harmful results of malicious software such as worms, viruses and Trojans.
+	http://en.wikipedia.org/wiki/Payload_(computing)
+
+Race condition:
+	A type of flaw in an software system where the output is dependent on the sequence of timing of other uncontrollable events.
+	http://en.wikipedia.org/wiki/Race_condition
+
+Spam:
+	The use of electronic messaging systems to send unsolicited bulk messages, especially advertising, indiscriminately.
+	http://en.wikipedia.org/wiki/Spam_(electronic)
+
+Checksum:
+	A fixed-size datum computed from an arbitrary block of digital data for the purpose of detecting accidental errors that may have been introduced during its transmission or storage.
+	http://en.wikipedia.org/wiki/Checksum
+
+Variant:
+	A different form of the same object.	
+	http://dictionary.reference.com/browse/variant
+
+Privilege confusion:
+	The process of fooling other computer programs to misuse its authority.
+	http://en.wikipedia.org/wiki/Confused_deputy_problem
+
+Spyware:
+	A type of malware installed on computers that collects information about users without their knowledge.
+	http://en.wikipedia.org/wiki/Spyware
+
+Sniffer:
+	A software or a piece of hardware that can intercept and log traffic passing over a whole of part of a digital network.
+	http://en.wikipedia.org/wiki/Packet_annalyzer
+
+Firewall:
+	A software or hardware used to help keep a network secure by analyzing network traffic and determined whether it should be allowed or not.
+	http://en.wikipedia.org/wiki/Firewall_(computing)
