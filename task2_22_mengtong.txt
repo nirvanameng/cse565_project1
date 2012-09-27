@@ -30,3 +30,12 @@ Q. prevention measures(How to demonstrate?)
 2. Stored Procedure: the developer has to first define all the SQL code and then pass in each paramter to the query after. But unlike prepared statements, this procedure defines and stores the SQL code in the database itself and then called from the application.
 
 3. Escaping all user supplied input: escape user input before putting it in a query, which means that convert all the quotes in the user input so that they will not cause any ambiguity.
+
+Q. How to attack
+A. SQL injection
+
+Q. How to fix
+A. Parameterized SQL statement
+
+Q. PLP. for WebGoat?
+A. To give a user account only those privileges that are essential to accomplish its work, no additional privileges.
