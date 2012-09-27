@@ -10,7 +10,7 @@ Q. Briefly answer the following questions about SQL injection.
 
 $LASTNAME = "randomname OR 'a'='a"
 
-";" needed?
+";" needed? --YES! The lessons I learned.
 
 2 add
 
